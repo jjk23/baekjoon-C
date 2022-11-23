@@ -4,11 +4,21 @@
 main()
 {
     int a,b=0;
-    scanf("%d", &a);
-    for (a; a > 0; a--)
+    scanf("%d %d", &a, &b);
+    int c, d;
+    int n=0;
+    for (b; b > 0; b--)
     {
-        b += a;
+        scanf("%d %d", &c, &d);
+        n += (c * d);
     }
-    printf("%d", b);
+    if (a == n)
+    {
+        printf("Yes");
+    }
+    else
+    {
+        printf("No");
+    }
     return 0;
 }
