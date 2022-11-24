@@ -3,22 +3,13 @@
 
 main()
 {
-    int a,b=0;
-    scanf("%d %d", &a, &b);
-    int c, d;
-    int n=0;
-    for (b; b > 0; b--)
+    int n;
+    int a, b;
+    scanf("%d", &n);
+    for (int i = 0; i < n; i++)
     {
-        scanf("%d %d", &c, &d);
-        n += (c * d);
-    }
-    if (a == n)
-    {
-        printf("Yes");
-    }
-    else
-    {
-        printf("No");
+        scanf("%d %d", &a, &b);
+        printf("%d\n", a + b);
     }
     return 0;
 }
